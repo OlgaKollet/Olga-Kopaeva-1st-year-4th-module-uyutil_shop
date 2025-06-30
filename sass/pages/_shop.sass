@@ -1,0 +1,96 @@
+.main__nav
+  padding: 3.5rem 13.5rem 0rem 13.5rem
+  position: absolute
+  left: 0
+  top: 0
+  
+  width: 100%
+  // height: 19vh
+  background: $color-white
+  z-index: 100
+  
+  &-item
+    &:not(:last-child)
+      margin-right: 0rem
+    & .nav__link:link
+      display: inline-block
+      font-weight: 700
+      padding: 1.5rem 8rem
+      transition: all .6s ease
+  
+    & .nav__link:hover,
+    & .nav__link:active,
+    &.active .nav__link
+
+      background-color: $color-accent
+      color: $color-white
+      padding: 1.5rem 8rem
+      border-radius: 1rem
+      font-weight: 400
+.shop__main
+  &-wrap
+    padding-top: 6rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    
+    
+  &_cover
+    margin-bottom: 10rem
+     
+    
+    height: auto
+    img
+      display: inline-block
+      margin-bottom: 2rem
+    
+    &:first-child      
+      padding-top: 7rem
+      text-align: center
+      img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: contain
+      
+    &:last-child
+      margin-top: 8rem
+      padding-bottom: 4rem
+    &-3
+      margin-top: 0
+      img
+        margin-bottom: 1rem
+
+    img
+      display: inline-block     
+      width: 100%
+      // height: 80vh
+      object-fit: contain
+      
+  &_button-cover
+    text-align: center
+    
+    
+    
+  &_button
+    display: inline-block
+    color: $color-white
+    font-weight: 1.6rem
+    background: $color-accent
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 2rem
+    padding: 1.5rem 6.5rem
+    border-radius: 1.6rem
+.cover__img-1
+  width: 33%     
+.cover__img-2
+  width: 60%     
+.cover__img-3
+  width: 35%     
+.cover__img-4
+  width: 40%
+  margin-bottom: 0    
+.cover__img-5
+  width: 15% 
+  margin-bottom: 0    
