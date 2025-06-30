@@ -1,0 +1,23 @@
+*, ::after, ::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  font-size: 62.5%
+  @media (min-width: 1600px)
+    font-size: 65%
+  @media (min-width: 2500px)
+    font-size: 95%
+
+body 
+  background-color: $color-white
+  font-size: 1.6rem
+
+.container  
+  padding: 0 150px
+ 
+
+@include font(400, url("../fonts/Roboto-Regular.woff") format("woff"))
+@include font(700, url("../fonts/Roboto-Bold.woff") format("woff"))
+
