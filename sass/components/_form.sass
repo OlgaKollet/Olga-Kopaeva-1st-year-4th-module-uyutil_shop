@@ -1,0 +1,55 @@
+.form
+  text-align: center
+  width: auto
+  height: auto
+  padding: 4rem
+  border-radius: 3rem
+  background: $color-accent
+  
+  label
+    display: inline-block
+    font-size: 2rem
+    margin-bottom: 2rem
+    letter-spacing: normal
+    color: $color-white
+  input
+    display: block
+    width: 100%
+    padding: 1.5rem
+    border-radius: 1.5rem
+    margin-bottom: 1rem
+    font-size: 2rem
+    outline: none
+    border: none
+    &:focus
+      outline: none
+    &:last-of-type
+      margin-bottom: 2rem
+  input[type]::placeholder
+    font-size: 1.6rem
+    font-weight: 300 
+    transition: opacity 0.3s ease
+
+  input[type]:focus::placeholder 
+    opacity: 0
+
+  input[type]:not(:focus):placeholder-shown
+    opacity: 1
+  button
+    border: none
+    background: $color-white
+    font-size: 1.6rem
+    text-transform: lowercase
+    padding: 0.8rem
+    border-radius: 1rem
+    color: $color-accent
+    cursor: pointer
+    
+    
+
+
+        
+  &__obl
+    position: relative
+    top: 40%
+    transform: translateY(-40%)
